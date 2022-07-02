@@ -1,7 +1,7 @@
 /*
 	Containers
 */
-#content-wrapper, #example-wrapper {
+#content-wrapper, #portfolio {
 	height: 100%;
 }
 .scrollContainer {
@@ -13,7 +13,7 @@
 	height: 100%;
 	margin: auto;
 }
-#example-wrapper .scrollContent {
+#portfolio .scrollContent {
 	height: 100%;
 }
 
@@ -21,32 +21,29 @@
 	overflow-y: hidden;
 	overflow-x: scroll;
 }
-#example-wrapper.scrollContainer .scrollContent {
+#portfolio.scrollContainer .scrollContent {
 	width: 100%;
 	height: auto;
 }
-#example-wrapper.scrollContainer.horizontal .scrollContent {
+#portfolio.scrollContainer.horizontal .scrollContent {
 	width: auto;
 	height: 100%;
 }
-#example-wrapper.horizontal {
+#portfolio.horizontal {
 	white-space: nowrap;
 	font-size: 0;  /* fix for spaces between inline block divs */
 }
-#example-wrapper.horizontal div {
-	font-size: 13px;
+#portfolio.horizontal div {
+	font-size: 1rem;
 }
-#example-wrapper .scrollContent, #example-wrapper.horizontal .scrollContent {
+#portfolio .scrollContent, #portfolio.horizontal .scrollContent {
 	font-size: 0;
 }
-#example-wrapper .scrollContent div {
-	font-size: 13px;
-}
-#example-wrapper section {
+
+#portfolio section {
 }
 
 section#titlechart {
-	text-align: center;
 	position: relative;
 	height: 100%;
 	min-height: 500px;
@@ -96,36 +93,33 @@ section#titlechart #description ol, section#titlechart #description p {
 section#titlechart #description ol {
 	list-style-position: outside;
 }
-#example-wrapper section#titlechart #description:after {
+#portfolio section#titlechart #description:after {
 	content: "↧";
 	font-size: 40px;
 	display: block;
 }
-#example-wrapper.horizontal section#titlechart #description:after {
+#portfolio.horizontal section#titlechart #description:after {
 	content: "↦";
 }
 
 
-section.demo * {
-	font-size: 13px;
+section.content * {
+	font-size: 1rem;
 }
-section.demo {
-	font-size: 0;
-	text-align: center;
-	background-image: url("../img/example_bg_v.png");
+section.content {
+	font-size:1rem;
 }
-section.demo.fullheight {
+section.content.fullheight {
 	min-height: 100%;
 }
-section.demo.doublewidth, .spacer.doublewidth {
+section.content.doublewidth, .spacer.doublewidth {
 	min-width: 200%;
 }
-.horizontal section.demo {
+.horizontal section.content {
 	text-align: inherit;
 	white-space: nowrap;
-	background-image: url("../img/example_bg_h.png");
 }
-.horizontal section.demo.fullwidth {
+.horizontal section.content.fullwidth {
 	min-width: 100%;
 }
 /*
@@ -161,7 +155,6 @@ h1.badge.velocity:after {
 .spacer {
 	text-align: center;
 	min-height: 100px;
-	background-image: url("../img/example_bg_spacer_v.gif");
 }
 .spacer.s0 {
 	min-height: 1px;
@@ -200,7 +193,6 @@ h1.badge.velocity:after {
 	min-height: 100%;
 }
 .horizontal .spacer {
-	background-image: url("../img/example_bg_spacer_h.gif");
 	margin-bottom: 0;
 	min-height: initial;
 	min-width: 100px;
@@ -286,7 +278,7 @@ h1.badge.velocity:after {
 }
 .box1 p, .box2 p, .box3 p {
 	margin: 5px 15px 5px 15px;
-	font-size: 13px;
+	font-size: 1rem;
 	font-weight: lighter;
 	color: white;
 }
@@ -657,7 +649,7 @@ html.touch .menuwrap > a.prev:active, html.touch .menuwrap > a.next:active, html
 }
 html.touch .menuwrap > a.prev {
 	margin-right: 70px;
-	padding-right: 10px; 
+	padding-right: 10px;
 }
 html.touch .menuwrap > a.next {
 	margin-left: 70px;
@@ -844,17 +836,14 @@ a.viewsource:before {
 #parallaxContainer .layer1 {
 	height: 100%;
 	text-align: center;
-	background-image: url("../img/example_parallax_l1.gif");
 }
 #parallaxContainer .layer2 {
-	background-image: url("../img/example_parallax_l2.png");
 	position: absolute;
 	height: 139px;
 	width: 100%;
 	bottom: 32px
 }
 #parallaxContainer .layer3 {
-	background-image: url("../img/example_parallax_l3.gif");
 	position: absolute;
 	height: 32px;
 	width: 100%;
@@ -934,7 +923,7 @@ a.viewsource:before {
 	display: block;
 	text-align: center;
 }
-.demo.responsiveDuration {
+.content.responsiveDuration {
 	position: relative;
 }
 .responsiveDuration .box1 {
@@ -993,18 +982,13 @@ a.viewsource:before {
 	display: inline-block;
 }
 
-.demo#section-slides, .demo#section-wipes {
+.content#section-slides, .content#section-wipes {
 	height: 100%;
 	width: 100%;
 	background-image: none;
 }
-.demo#section-slides .panel, .demo#section-wipes .panel {
-	background-image: url("../img/example_bg_spacer_v.gif");
-}
-.demo#section-wipes #pinContainer .turqoise, .demo#section-wipes #pinContainer .green, .demo#section-slides #slideContainer .panel {
-	background-image: url("../img/example_bg_spacer_h.gif");
-}
-.demo#section-slides .panel > b, .demo#section-wipes .panel > b {
+
+.content#section-slides .panel > b, .content#section-wipes .panel > b {
 	font-size: 15px;
 	color: white;
 	position: relative;

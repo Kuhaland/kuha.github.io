@@ -107,10 +107,10 @@ function getCode($elem) {
 function showCode ($elem) {
 	var
 		code = getCode($elem);
-	
+
 	if ($elem.is("section.demo")) {
 		// complicated but i want to keep identation.
-		var $desc = $("div#example-wrapper section#titlechart").clone();
+		var $desc = $("div#portfolio section#titlechart").clone();
 		$desc.find(":not(script)").remove();
 		if ($desc.children().length > 0) {
 			var startcode = getCode($desc);
@@ -141,7 +141,7 @@ function showCode ($elem) {
 					.addClass("codewrap")
 					.append($ln)
 					.append($code);
-	
+
 	$("<div>")
 		.attr("id", "codecontainer")
 		.append($codewrap)
@@ -208,7 +208,7 @@ function enableScroll (elem) {
 
 $(document).ready(function () {
 	// prepare highlight js
-	
+
 
 	// build menu
 	var
@@ -280,7 +280,7 @@ $(document).ready(function () {
 		var
 			demoSelector = ".demowrap, section.demo:not(.demowrap .demo)",
 			$demoElements = $(demoSelector),
-			$relevantCode = $demoElements.length <= 1 ? $demoElements : $(this).parents(demoSelector + ", div#example-wrapper, body").first();
+			$relevantCode = $demoElements.length <= 1 ? $demoElements : $(this).parents(demoSelector + ", div#portfolio, body").first();
 		$(this).data("code", $relevantCode.clone());
 	});
 
@@ -389,7 +389,7 @@ $(document).on("mouseup mousemove", function (e) {
 
 			$input.val(val.toFixed(decimals));
 			if ($(this).hasClass("liveupdate")) {
-				$input.change();	
+				$input.change();
 			}
 		}
 	});
@@ -404,7 +404,7 @@ $(document).on("mouseup", function (e) {
 });
 
 $(document).on("orientationchange", function (e) {
-	if ($("#example-wrapper.horizontal").length > 0) {
+	if ($("#portfolio.horizontal").length > 0) {
 		$("meta[name='viewport']").attr("content", (window.orientation === 0 ? "width" : "height")+ "=500");
 	}
 });
