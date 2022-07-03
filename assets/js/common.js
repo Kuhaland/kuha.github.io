@@ -7,35 +7,25 @@ $(document).ready(function() {
 
 $(function () { // wait for document ready
     // init
-    var controller = new ScrollMagic.Controller();
+    var controller = new ScrollMagic.Controller({
+        globalSceneOptions: {
+            triggerHook: 'onLeave',
+            duration: "200%" // this works just fine with duration 0 as well
+            // However with large numbers (>20) of pinned sections display errors can occur so every section should be unpinned once it's covered by the next section.
+            // Normally 100% would work for this, but here 200% is used, as Panel 3 is shown for more than 100% of scrollheight due to the pause.
+        }
+    });
 
-    // define movement of panels
-    var wipeAnimation = new TimelineMax()
-        // animate to panel
-        .to("#slideContainer", 0.5, {z: -150, delay: 2})
-        .to("#slideContainer", 1,   {x: "-20%"})
-        .to("#slideContainer", 0.5, {z: 0})
+    // get all slides
+    var slides = document.querySelectorAll("section.panel");
 
-        .to("#slideContainer", 0.5, {z: -150, delay: 2})
-        .to("#slideContainer", 1,   {x: "-40%"})
-        .to("#slideContainer", 0.5, {z: 0})
-
-        .to("#slideContainer", 0.5, {z: -150, delay: 2})
-        .to("#slideContainer", 1,   {x: "-60%"})
-        .to("#slideContainer", 0.5, {z: 0})
-
-        .to("#slideContainer", 0.5, {z: -150, delay: 2})
-        .to("#slideContainer", 1,   {x: "-80%"})
-        .to("#slideContainer", 0.5, {z: 0});
-
-    // create scene to pin and link animation
-    new ScrollMagic.Scene({
-        triggerElement: "#pinContainer",
-        triggerHook: "onLeave",
-        duration: "500%"
-    })
-    .setPin("#pinContainer")
-    .setTween(wipeAnimation)
-    //.addIndicators() // add indicators (requires plugin)
-    .addTo(controller);
+    // create scene for every slide
+    for (var i=0; i<slides.length; i++) {
+        new ScrollMagic.Scene({
+            triggerElement: slides[i]
+        })
+            .setPin(slides[i], {pushFollowers: false})
+            //.addIndicators() // add indicators (requires plugin)
+            .addTo(controller);
+    }
 });
