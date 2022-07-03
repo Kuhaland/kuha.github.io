@@ -16,14 +16,19 @@
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
 </head>
 <body>
+<div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader__section left"></div>
+    <div class="loader__section right"></div>
+</div>
 <div id="content-wrapper">
     <div id="portfolio">
         <div class="scrollContent">
             <section id="titlechart" class="intro">
                 <div class="intro__text">
                     <span class="intro__text-title">PORTFOLIO <strong>11 - 22</strong></span>
-                    <p class="intro__text-item">Lee hyoung hwa</p>
-                    <p class="intro__text-item">leehx<strong>78</strong>@gmail.comㅣ<strong>010.8914.0203</strong></p>
+                    <p class="intro__text-item"><em>이형화</em> Lee hyoung hwa</p>
+                    <p class="intro__text-item m-t-3">leehx<strong>78</strong>@gmail.comㅣ<strong>010.8914.0203</strong></p>
                 </div>
                 <div class="scroll">
                     <div class="scroll__mouse">
@@ -49,52 +54,45 @@
                 <div id="pinContainer">
                     <div id="slideContainer">
                         <section class="panel index">
-                            <h2>Lee Hyung hwa</h2>
-                            <div class="index__education">
-                                <h3>Education</h3>
-                                <ul>
-                                    <li>가천길대학</li>
-                                    <li>사무자동화 / 학사</li>
-                                    <li>1996.03 - 1998.02</li>
-                                </ul>
+                            <div class="index__content profile">
+                                <h3 class="index__content-title">Profile</h3>
+                                <p class="index__content-text">이형화 <strong class="font__type-josefin">78.02.12</strong></p>
+                                <p class="index__content-text">서울시 구로구 구일동</p>
+                                <p class="index__content-text">leehx78@gmail.com</p>
                             </div>
-                            <div class="index__experience">
-                                <h3 class="mb-0">(주)플러스앤</h3>
-                                <div class="subheading mb-3">IT연구소 [차장ㅣ팀장]</div>
-                                <p>2018.04 - 재직중</p>
-                                <div>
-                                    <ul>
-                                        <li>[다음카카오] 해외항공 (웹/모바일)</li>
-                                        <li>[노랑풍선] 해외호텔 (웹/모바일)</li>
-                                        <li>[에어픽] 해외항공 (웹/모바일)</li>
-                                        <li>[롯데JTB] 해외항공 (웹/모바일)</li>
-                                        <li>[참좋은여행] BTMS (PC/모바일)</li>
-                                        <li>[탑항공] 해외항공 (모바일)</li>
-                                        <li>[여행협동조합/ATRAVEL] 해외항공, 해외호텔, 티켓 (PC/모바일)</li>
-                                        <li>[유니콘네트웍스] 해외호텔/해외항공 (PC/모바일)</li>
-                                        <li>[저스트슬립] 해외호텔 (PC/모바일)</li>
-                                        <li>[저스트고] 해외, 국내항공, 해외항공, 국내숙박, 제주렌트카 (PC/모바일)</li>
-                                        <li>[임진각평화누리캠핑장] (PC/모바일)</li>
-                                        <li>[마레보리조트] (PC/모바일)</li>
-                                        <li>[이천테르메덴] (PC)</li>
-                                        <li>[여행창조] 브랜드웹사이트 (PC/모바일) / 회원권 (PC) / 휴양소웹사이트 (PC)</li>
-                                        <li>[창조트레저] (PC/모바일)</li>
-                                        <li>[스테리움] 캠핑 웹사이트 (제천/서천/변산)</li>
-                                    </ul>
-                                </div>
+                            <div class="index__content education">
+                                <h3 class="index__content-title">Education</h3>
+                                <p class="index__content-text">가천길대학 - 사무자동화과</p>
+                                <p class="index__content-text"><strong class="font__type-josefin">1996. 03 - 1998. 12</strong></p>
+                            </div>
+                            <div class="index__content experience">
+                                <h3 class="index__content-title">Experience</h3>
+                                <p class="index__content-text">(주)플러스앤 - IT연구소 (차장/팀장)</p>
+                                <p class="index__content-text"><strong class="font__type-josefin">2018.04</strong> - 재직중</p>
+                                <p class="index__content-text m-t-5">(주)저스트고 - IT연구소 (차장/팀장)</p>
+                                <p class="index__content-text"><strong class="font__type-josefin">2014.06 - 2017.12</strong></p>
+                                <p class="index__content-text m-t-5">(주)여행창조 - IT연구소 (차장/팀장)</p>
+                                <p class="index__content-text"><strong class="font__type-josefin">2011.01 - 2014.05</strong></p>
+                                <p class="index__content-text m-t-5">(주)한투어 - IT연구소 (과장)</p>
+                                <p class="index__content-text"><strong class="font__type-josefin">2008.01 - 2010.08</strong></p>
+                                <p class="index__content-text m-t-5">인강테크 - IT연구소 (대리)</p>
+                                <p class="index__content-text"><strong class="font__type-josefin">2006.06 - 2008.08</strong></p>
                             </div>
                             <div class="strips">
                                 <span class="strips__line"></span>
                                 <span class="strips__line"></span>
                                 <span class="strips__line"></span>
+                                <span class="strips__line"></span>
                             </div>
                         </section>
-                        <section class="panel experience">
-                            <h2>experience</h2>
+                        <section class="panel uxui">
                             <div>
-                                <h3 class="mb-0">(주)플러스앤</h3>
-                                <div class="subheading mb-3">IT연구소 [차장ㅣ팀장]</div>
-                                <p>2018.04 - 재직중</p>
+                                <h3 class="mb-0">UX UI Design</h3>
+                                <p>IT연구소 [차장ㅣ팀장]</p>
+                            </div>
+                            <div class="strips">
+                                <span class="strips__line"></span>
+                                <span class="strips__line l-20p"></span>
                             </div>
                         </section>
                         <section class="panel green">
