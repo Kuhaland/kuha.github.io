@@ -26,7 +26,7 @@ ul,ol,li,p,dt,dd{padding:0;margin:0}
 /* common */
 #pinContainer{overflow:hidden;width:100%;height:100%;-webkit-perspective:1000;perspective:1000}
 #slideContainer{width:500%;height:100%}
-.panel{height:100%;width:100%;}
+.panel{overflow:hidden;height:100%;width:100%}
 
 /* loading */
 #loader-wrapper{overflow:hidden;position:fixed;top:0;left:0;width:100%;height:100%;z-index:10;opacity:0.9}
@@ -67,9 +67,9 @@ ul,ol,li,p,dt,dd{padding:0;margin:0}
 /* intro */
 .intro{background-color:#8f94fb;background-image:linear-gradient(140deg, #7278ff 0%, #a850ee 90%, #9599e2 100%) !important}
 .intro__text{font-family:'Raleway',sans-serif}
-.intro__text-title{display:block;padding:100px 40px;margin-bottom:40px;border-bottom:1px solid rgba(250,250,250,0.3);font-weight:600;font-size:3.5714rem;color:#ffffff;text-transform:uppercase}
+.intro__text-title{display:block;padding:100px 80px;margin-bottom:40px;border-bottom:1px solid rgba(250,250,250,0.3);font-weight:600;font-size:3.5714rem;color:#ffffff;text-transform:uppercase}
 .intro__text-title strong,.intro__text-item strong{font-family: 'Josefin Sans',sans-serif;font-weight:100}
-.intro__text-item{padding:0 40px;font-weight:400;font-size:1.429rem;color:#ffffff;letter-spacing:1px}
+.intro__text-item{padding:0 80px;font-weight:400;font-size:1.429rem;color:#ffffff;letter-spacing:1px}
 .intro__text-item:last-child{font-weight:200;font-size:1rem;opacity:0.8}
 .intro__text-item em{font-family:'Noto Sans KR',sans-serif;font-weight:500}
 
@@ -115,28 +115,39 @@ ul,ol,li,p,dt,dd{padding:0;margin:0}
 .index__content-text{padding:5px 0;font-size:0.8571rem !important;color:#888888;line-height:1.25}
 
 /* ux ui */
-.uxui{background-image:url('../img/image-uxui.png');background-repeat:no-repeat;background-position:160% 50%;background-color:#f2efdc}
-.uxui__content{position:absolute;top:80px;left:6%}
-.uxui__content-title{font-family:'Raleway',sans-serif;font-weight:700;font-size:1.286rem !important;text-transform:uppercase}
-.uxui__content-info{font-size:1rem;color:#888888}
-.uxui__content-list{margin-top:40px}
-.uxui__content-list li{margin-top:10px;font-size:0.8571rem;color:#888888}
-.uxui__content-list li:before{content:'';display:inline-block;width:12px;height:12px;margin-right:8px;background-image:url('../img/ico-check.svg');background-size:100%;background-repeat:no-repeat;background-position:100% 0%;opacity:0.5}
+.uxui{background-color:#f2efdc}
+.uxui .content__image{position:absolute;top:50%;right:-220px;z-index:2;display:inline-block;width:1000px;height:603px;background-image:url('../img/image-uxui.png');background-repeat:no-repeat;margin-top:-300px}
 
-
+/* bx */
+.bx{background:url('../img/bg_bx.jpg') no-repeat;background-size:cover}
+.bx .content__inner-title{color:#ffffff}
+.bx .content__inner-subtext{color:#a1a1a1}
 
 /* contact */
+.panel.contact{z-index:10}
 .contact{background-color:#8f94fb;background-image:linear-gradient(140deg, #7278ff 0%, #a850ee 90%, #9599e2 100%) !important}
 .contact .strips__line{background:rgba(250,250,250,0.3)}
-.contact__content{display:block;width:100%;color:#ffffff;text-align:center}
+
+
+
+
+
 
 /* common */
-.strips__line{position:absolute;top:0;width:1px;height:100vh;background:rgba(0,0,0,0.1)}
+.strips__line{position:absolute;top:0;width:1px;height:100vh;z-index:1;background:rgba(0,0,0,0.1)}
 .strips__line:nth-child(1){left:5%}
 .strips__line:nth-child(2){left:35%}
 .strips__line.type01:nth-child(2){left:35%}
 .strips__line:nth-child(3){left:65%}
 .strips__line:nth-child(4),.strips__line.end{left:95%}
+
+.contact__content{display:block;width:100%;color:#ffffff;text-align:center}
+.content__inner{position:absolute;top:80px;left:6%}
+.content__inner-title{font-family:'Raleway',sans-serif;font-weight:700;font-size:1.286rem !important;text-transform:uppercase}
+.content__inner-subtext{font-size:1rem;color:#888888}
+.content__inner-list{margin-top:40px}
+.content__inner-list li{margin-top:10px;font-size:0.8571rem;color:#888888}
+.content__inner-list li:before{content:'';display:inline-block;width:12px;height:12px;margin-right:8px;background-image:url('../img/ico-check.svg');background-size:100%;background-repeat:no-repeat;background-position:100% 0%;opacity:0.5}
 
 .l-25p{left:25% !important}
 
