@@ -9,8 +9,8 @@
 body{font-family:'Noto Sans KR',sans-serif;font-size:1rem;font-weight:400;font-size:1rem;color:#333333;-webkit-tap-highlight-color:rgba(0,0,0,0)}
 body,html{height:100%}
 h1,h2,h3,h4{font-family:'Noto Sans KR',sans-serif;padding:0;margin:0}
-a,a:visited{text-decoration:none;color: #2e639e;}
-a:hover{text-decoration: underline;}
+a,a:visited{text-decoration:none}
+a:hover{text-decoration: underline}
 .touchonly{display:none}
 html.touch .touchonly{display:block}
 .noselect,.noselect *{user-select:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-o-user-select:none}
@@ -21,7 +21,7 @@ html[xmlns] .clearfix{display:block}
 * html .clearfix{height:1%}
 li{list-style:none}
 strong,em{font-weight:normal;font-style:normal}
-ul,ol,li,p,dt,dd{padding:0;margin:0}
+ul,ol,li,p,dt,dd,figure{padding:0;margin:0}
 
 /* common */
 #pinContainer{overflow:hidden;width:100%;height:100%;-webkit-perspective:1000;perspective:1000}
@@ -123,15 +123,41 @@ ul,ol,li,p,dt,dd{padding:0;margin:0}
 .bx .content__inner-title{color:#ffffff}
 .bx .content__inner-subtext{color:#a1a1a1}
 
+.bx__content{margin-top:40px}
+.bx__content-item{display:block;width:300px;height:120px;padding:0 20px;margin-bottom:20px;background-color:#ffffff;border-radius:15px;text-align:center}
+.bx__content-ci{display:inline-block;width:200px;height:120px;background-repeat:no-repeat;background-size:100%}
+.bx__content-ci.strm{background-image:url('../img/ci_strm.png')}
+.bx__content-ci.cld{background-image:url('../img/ci_cld.png')}
+.bx__content-ci.ijg{background-image:url('../img/ci_ijg.png')}
+.bx__content-ci.vw{background-image:url('../img/ci_vw.png')}
+
 /* contact */
 .panel.contact{z-index:10}
 .contact{background-color:#8f94fb;background-image:linear-gradient(140deg, #7278ff 0%, #a850ee 90%, #9599e2 100%) !important}
+.contact__text{margin-top:250px;margin-left:7%;font-family:'Raleway',sans-serif;font-weight:200;font-size:4.286rem !important;text-align:left;text-transform:uppercase;opacity:0.8}
+.contact__text strong{font-size:4.286rem !important;font-weight:400}
+.contact__subtext{margin-top:15px;margin-left:7%;font-family:'Noto Sans KR',sans-serif;font-weight:300;font-size:1rem !important;text-align:left;opacity:0.7}
+.contact__copyright{position:absolute;bottom:40px;right:7%;opacity:0.5}
 .contact .strips__line{background:rgba(250,250,250,0.3)}
-
-
-
-
-
+.contact__button{margin-top:40px;margin-left:6%;text-align:left}
+.contact__button-item{position:relative;margin-right:10px;padding:0.875em 1.428571429em;font-family:'Raleway',sans-serif;font-weight:400;font-size:1rem;color:#DAA25A;line-height:1.4;letter-spacing:0.3em;transition:all 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s}
+.contact__button-item::after{content:"";display:block;position:absolute;width:80%;left:50%;height:1px;bottom:0;background:#DAA25A;transform:translatex(-50%);transition:width 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0.4s, background 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s}
+.contact__button-item span{display:block;position:absolute;width:100%;top:0;left:0;transition:all 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9)}
+.contact__button-item span::before,.contact__button-item span::after{content:"";display:block;position:absolute;background:#DAA25A;transition:transform 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9)}
+.contact__button-item span:first-child{height:100%}
+.contact__button-item span:first-child::before,.contact__button-item span:first-child::after{width:1px;height:100%;bottom:0;transform:scale3d(1, 0, 1);transform-origin:bottom center;transition:transform 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0.2s, background 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s}
+.contact__button-item span:first-child::before{left:0}
+.contact__button-item span:first-child::after{right:0}
+.contact__button-item span:last-child{width:100%;height:1px}
+.contact__button-item span:last-child::before,.contact__button-item span:last-child::after{width:100%;height:1px;bottom:0;transform: scale3d(0, 1, 1);transition:transform 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s, background 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s}
+.contact__button-item span:last-child::before{left:0;transform-origin:bottom left}
+.contact__button-item span:last-child::after{right:0;transform-origin:bottom right}
+.contact__button-item:hover{opacity:1;outline:0;color:#ffffff !important;text-decoration:none;transition:color 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s;opacity:0.8}
+.contact__button-item:hover::after{width:100%;background:#ffffff;transition:width 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s, background 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s;opacity:0.8}
+.contact__button-item:hover span:first-child::before,.contact__button-item:hover span:first-child::after{transform:scale3d(1, 1, 1);background:#ffffff;transition:transform 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0.2s, background 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s;opacity:0.8}
+.contact__button-item:hover span:last-child::before,.contact__button-item:hover span:last-child::after{transform:scale3d(1, 1, 1);background:#ffffff;transition:transform 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0.4s, background 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s;opacity:0.8}
+.contact__button-item:focus{background:#ffffff;color:#7278ff !important;transition:all 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9);opacity:0.8}
+.contact__button-item:focus::after{opacity:0}
 
 /* common */
 .strips__line{position:absolute;top:0;width:1px;height:100vh;z-index:1;background:rgba(0,0,0,0.1)}
@@ -144,8 +170,8 @@ ul,ol,li,p,dt,dd{padding:0;margin:0}
 .contact__content{display:block;width:100%;color:#ffffff;text-align:center}
 .content__inner{position:absolute;top:80px;left:6%}
 .content__inner-title{font-family:'Raleway',sans-serif;font-weight:700;font-size:1.286rem !important;text-transform:uppercase}
-.content__inner-subtext{font-size:1rem;color:#888888}
-.content__inner-list{margin-top:40px}
+.content__inner-subtext{margin-top:5px;font-size:0.8571rem !important;color:#888888}
+.content__inner-list{margin-top:20px}
 .content__inner-list li{margin-top:10px;font-size:0.8571rem;color:#888888}
 .content__inner-list li:before{content:'';display:inline-block;width:12px;height:12px;margin-right:8px;background-image:url('../img/ico-check.svg');background-size:100%;background-repeat:no-repeat;background-position:100% 0%;opacity:0.5}
 

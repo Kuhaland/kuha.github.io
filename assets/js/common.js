@@ -29,3 +29,8 @@ $(function () { // wait for document ready
             .addTo(controller);
     }
 });
+$(document).ready(function(){
+    $('.contact__button-item').each(function() {
+        $(this).append('<span></span><span></span>')
+    });
+});
