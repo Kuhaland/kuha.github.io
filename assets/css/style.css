@@ -21,7 +21,7 @@ html[xmlns] .clearfix{display:block}
 * html .clearfix{height:1%}
 li{list-style:none}
 strong,em{font-weight:normal;font-style:normal}
-p{padding:0;margin:0}
+ul,ol,li,p,dt,dd{padding:0;margin:0}
 
 /* common */
 #pinContainer{overflow:hidden;width:100%;height:100%;-webkit-perspective:1000;perspective:1000}
@@ -113,9 +113,12 @@ p{padding:0;margin:0}
 .index__content-text{padding:5px 0;font-size:0.8571rem !important;color:#888888;line-height:1.25}
 
 /* ux ui */
-
-
-
+.uxui{background:url('../img/image-uxui.png') no-repeat 160% 50%;}
+.uxui__content{position:absolute;top:80px;left:6%}
+.uxui__content-title{font-family:'Raleway',sans-serif;font-weight:700;font-size:1.286rem !important;text-transform:uppercase}
+.uxui__content-list{margin-top:40px}
+.uxui__content-list li{margin-top:10px;font-size:0.8571rem;color:#888888}
+.uxui__content-list li:before{content:'';display:inline-block;width:12px;height:12px;margin-right:8px;background-image:url('../img/ico-check.svg');background-size:100%;background-repeat:no-repeat;background-position:100% 0%;opacity:0.5}
 
 /* common */
 .strips__line{position:absolute;top:0;width:1px;height:100vh;background:rgba(0, 0, 0, 0.1)}
