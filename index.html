@@ -14,6 +14,16 @@
     <meta property="og:image" content="https://kuhaland.github.io/assets/img/ogimage.png">
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-61JLYLLL0C"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-61JLYLLL0C');
+    </script>
 </head>
 <body>
 <div id="loader-wrapper">
@@ -30,7 +40,7 @@
         <div class="scrollContent">
             <section id="titlechart" class="intro">
                 <div class="intro__text">
-                    <span class="intro__text-title">PORTFOLIO <strong>11 - 22</strong></span>
+                    <span class="intro__text-title">PORTFOLIO <strong>2022</strong></span>
                     <p class="intro__text-item"><em>이형화</em> Lee hyoung hwa</p>
                     <p class="intro__text-item m-t-3">leehx<strong>78</strong>@gmail.comㅣ<strong>010.8914.0203</strong></p>
                 </div>
@@ -92,27 +102,43 @@
                         <h3 class="content__inner-title">UX UI Design<br>Mark up</h3>
                         <p class="content__inner-subtext">여행 관련 다양한 프로젝트를 진행하여<br>디자인 및 마크업의 노하우를 가지고 있습니다.</p>
                         <ul class="content__inner-list">
-                            <li>[다음카카오] 해외항공</li>
-                            <li>[노랑풍선] 해외호텔</li>
-                            <li>[에어픽] 해외항공</li>
-                            <li>[롯데JTB] 해외항공</li>
-                            <li>[참좋은여행] BTMS</li>
-                            <li>[탑항공] 해외항공</li>
-                            <li>[여행협동조합/ATRAVEL] 해외항공, 해외호텔, 티켓</li>
-                            <li>[유니콘네트웍스] 해외호텔/해외항공</li>
-                            <li>[저스트고] 해외, 국내항공, 해외항공, 국내숙박, 제주렌트카</li>
-                            <li>[임진각평화누리캠핑장] 웹사이트</li>
-                            <li>[스테리움] 캠핑 웹사이트 (제천/서천/변산)</li>
-                            <li>[마레보리조트] 웹사이트</li>
-                            <li>[이천테르메덴] 카라반 웹사이트</li>
-                            <li>[플러스앤] 브랜드 웹사이트 / 회원권 웹사이트 / 휴양소 웹사이트 / 엑스트라넷</li>
-                            <li>[플러스앤] 여행 복지몰 웹사이트</li>
-                            <li>[창조트레저] 브랜드 웹사이트</li>
-                            <li>[마이캠핑] 캠핑 앱 (구글스토어)</li>
-                            <li>[리앤이 MGM] 브랜드 웹사이트</li>
-                            <li>[DMC ville] 브랜드 웹사이트</li>
+                            <li class="content__inner-btn">
+                                <span class="tooltip" data-title="[플러스앤] 자세히 보기">[플러스앤] 브랜드 웹사이트 / 회원권 웹사이트 / 휴양소 웹사이트 / 엑스트라넷</span>
+                            </li>
+                            <li class="content__inner-btn">[스테리움] 캠핑 웹사이트 (제천/서천/변산)</li>
+                            <li class="content__inner-btn">[임진각평화누리캠핑장] 웹사이트</li>
+                            <li class="content__inner-btn">[마레보리조트] 웹사이트</li>
+                            <li class="content__inner-btn">[플러스앤] 여행 복지몰 웹사이트</li>
+                            <li class="content__inner-btn">[창조트레저] 브랜드 웹사이트</li>
+                            <li class="content__inner-btn">[마이캠핑] 캠핑 앱 (구글스토어)</li>
+                            <li class="content__inner-btn">[리앤이 MGM] 브랜드 웹사이트</li>
+                            <li class="content__inner-btn">[DMC ville] 브랜드 웹사이트</li>
+                            <li class="content__inner-btn">[다음카카오] 해외항공</li>
+                            <li class="content__inner-btn">[노랑풍선] 해외호텔</li>
+                            <li class="content__inner-btn">[에어픽] 해외항공</li>
+                            <li class="content__inner-btn">[롯데JTB] 해외항공</li>
+                            <li class="content__inner-btn">[참좋은여행] BTMS</li>
+                            <li class="content__inner-btn">[탑항공] 해외항공</li>
+                            <li class="content__inner-btn">[여행협동조합/ATRAVEL] 해외항공, 해외호텔, 티켓</li>
+                            <li class="content__inner-btn">[유니콘네트웍스] 해외호텔/해외항공</li>
+                            <li class="content__inner-btn">[저스트고] 해외, 국내항공, 해외항공, 국내숙박, 제주렌트카</li>
                         </ul>
                     </div>
+                    <!-- modal content -->
+                    <div class="modal dn">
+                        <div class="modal__inner">
+                            <span class="modal__close">&times;</span>
+                            <p>[플러스앤] 브랜드 웹사이트 / 회원권 웹사이트 / 휴양소 웹사이트 / 엑스트라넷</p>
+                            <div class="modal__content">
+                                <div class="modal__content-item">
+                                    <img src="assets/img/content-plusn.jpg">
+                                    <span></span>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //modal content -->
                     <div class="content__image"></div>
                     <div class="strips">
                         <span class="strips__line"></span>
@@ -146,7 +172,7 @@
                 <section class="panel contact">
                     <div class="contact__content">
                         <p class="contact__text"><strong>T</strong>hank you</p>
-                        <p class="contact__subtext">궁금한 점이나 연락이 필요하시면 아래 버튼들을 클릭 해주세요.<br>언제든지 환영합니다.</p>
+                        <p class="contact__subtext">언제나 즐거운 소통을 기대하고 있습니다.<br>지금까지 제 포트폴리오를 읽어주셔서 감사합니다.</p>
                         <div class="contact__button">
                             <a href="mailto:leehx78@gmail.com" class="contact__button-item" target="_blank">EMAIL</a>
                             <a href="https://github.com/Kuhaland/kuhaland.github.io" class="contact__button-item" target="_blank">GITHUB</a>
