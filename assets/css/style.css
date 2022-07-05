@@ -126,7 +126,7 @@ ul,ol,li,p,dt,dd,figure{padding:0;margin:0}
 .bx__content{display:flex;margin-top:40px}
 .bx__content-item{width:220px;height:120px;padding:0 20px;margin-left:10px;margin-bottom:20px;background-color:#ffffff;border-radius:15px;text-align:center}
 .bx__content-item:first-child{margin-left:0}
-.bx__content-ci{display:inline-block;width:200px;height:120px;background-repeat:no-repeat;background-size:100%}
+.bx__content-ci{display:inline-block;width:200px;height:120px;margin:0 auto;background-repeat:no-repeat;background-position:center;background-size:80%}
 .bx__content-ci.strm{background-image:url('../img/ci_strm.png')}
 .bx__content-ci.cld{background-image:url('../img/ci_cld.png')}
 .bx__content-ci.ijg{background-image:url('../img/ci_ijg.png')}
