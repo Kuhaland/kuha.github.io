@@ -123,13 +123,15 @@ ul,ol,li,p,dt,dd,figure{padding:0;margin:0}
 .bx .content__inner-title{color:#ffffff}
 .bx .content__inner-subtext{color:#a1a1a1}
 
-.bx__content{margin-top:40px}
-.bx__content-item{display:block;width:300px;height:120px;padding:0 20px;margin-bottom:20px;background-color:#ffffff;border-radius:15px;text-align:center}
+.bx__content{display:flex;margin-top:40px}
+.bx__content-item{width:220px;height:120px;padding:0 20px;margin-left:10px;margin-bottom:20px;background-color:#ffffff;border-radius:15px;text-align:center}
+.bx__content-item:first-child{margin-left:0}
 .bx__content-ci{display:inline-block;width:200px;height:120px;background-repeat:no-repeat;background-size:100%}
 .bx__content-ci.strm{background-image:url('../img/ci_strm.png')}
 .bx__content-ci.cld{background-image:url('../img/ci_cld.png')}
 .bx__content-ci.ijg{background-image:url('../img/ci_ijg.png')}
 .bx__content-ci.vw{background-image:url('../img/ci_vw.png')}
+.bx__content-ci.mc{background-image:url('../img/ci_mc.png')}
 .bx .strips__line{background:rgba(250,250,250,0.3)}
 
 /* contact */
