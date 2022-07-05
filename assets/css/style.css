@@ -226,4 +226,10 @@ ul,ol,li,p,dt,dd,figure{padding:0;margin:0}
 	.index__content.experience{top:280px}
 	.index .strips__line{display:none}
 	.index .strips__line:nth-child(1){display:block}
+
+	.uxui .content__image{display:none}
+	.content__inner{top:40px;width:83%}
+	.content__inner-list li,.content__inner-list li>span{font-size:0.7857rem !important}
+	.content__inner-list li{margin-top:5px}
+	.contact__text{margin-top:40px}
 }
