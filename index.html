@@ -13,8 +13,22 @@
     <meta property="og:url" content="https://kuhaland.github.io/">
     <meta property="og:image" content="https://kuhaland.github.io/assets/img/ogimage.png">
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/owlcarousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
-
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <script src="assets/vendors/jquery.min.js"></script>
+    <script src="assets/owlcarousel/owl.carousel.js"></script>
+    <script>
+        jQuery(document).ready(function($) {
+            $('.fadeOut').owlCarousel({
+                items: 1,
+                animateOut: 'fadeOut',
+                loop: true,
+            });
+        });
+    </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-61JLYLLL0C"></script>
     <script>
@@ -25,7 +39,7 @@
         gtag('config', 'G-61JLYLLL0C');
     </script>
 </head>
-<body>
+<body id="main">
 <div id="loader-wrapper">
     <div id="loader"></div>
     <div class="loader__section left"></div>
@@ -35,6 +49,31 @@
         <span>로딩중입니다.</span>
     </div>
 </div>
+<!-- modal content -->
+<div class="modal">
+    <div class="modal__inner">
+        <div class="modal__inner-head">
+            <span class="modal__close">&times;</span>
+        </div>
+        <div class="modal__content">
+            <section id="demos">
+                <div class="row">
+                    <div class="large-12 columns">
+                        <div class="fadeOut owl-carousel owl-theme">
+                            <div class="item">
+                                <img src="assets/img/img_content-plusn-01.jpg">
+                            </div>
+                            <div class="item">
+                                <img src="assets/img/img_content-plusn-01.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+<!-- //modal content -->
 <div id="content-wrapper">
     <div id="portfolio">
         <div class="scrollContent">
@@ -97,13 +136,49 @@
                         <span class="strips__line"></span>
                     </div>
                 </section>
+                <section class="panel about">
+                    <div class="index__content title">
+                        <p class="about__content-text">안녕하세요~ <img src="assets/img/icon-hand.png" class="welcomeHand"> </p>
+                        <p class="about__content-text">모두가 공감하는 <strong>UI UX</strong>를 만들고 싶은 웹퍼블리셔입니다.</p>
+                    </div>
+                    <div class="index__content">
+                        <h3 class="index__content-title">웹퍼블리싱</h3>
+                        <p class="index__content-text">html, css, js등 모두가 이해할 수 있는 웹표준으로 시멘틱 마크업 작업을 지향합니다.</p>
+                        <p class="index__content-text">프론트부터 백엔드까지 다양한 프로젝트를 진행하여 빠른 작업이 가능하며 SEO를 통해 더 많은 유저들이 접근할 수 있도록 작업합니다.</p>
+                        <p class="index__content-text">Git을 사용하여 팀원간 공유도 가능하며 간단한 개발 작업도 가능합니다.</p>
+                    </div>
+                    <div class="index__content">
+                        <h3 class="index__content-title">디자인</h3>
+                        <p class="index__content-text">Photoshop, Figma, Sketch 등을 통해 다양한 웹페이지 및 모바일 디자인이 가능합니다.</p>
+                        <p class="index__content-text">UI 디자인, BX, 컨텐츠 디자인까지 다양한 업무을 진행하여 원하시는 결과물을 만들 수 있습니다.</p>
+                    </div>
+                    <div class="index__content">
+                        <h3 class="index__content-title">Skills</h3>
+                        <p class="index__content-text"></p>
+                        <ul class="about__skill">
+                            <li class="about__skill-icon"><i class="fab fa-html5"></i></li>
+                            <li class="about__skill-icon"><i class="fab fa-css3-alt"></i></li>
+                            <li class="about__skill-icon"><i class="fab fa-sass"></i></li>
+                            <li class="about__skill-icon"><i class="fab fa-less"></i></li>
+                            <li class="about__skill-icon"><i class="fab fa-js-square"></i></li>
+                            <li class="about__skill-icon"><i class="fab fa-vuejs"></i></li>
+                            <li class="about__skill-icon"><i class="fab fa-php"></i></li>
+                            <li class="about__skill-icon"><i class="fab fa-laravel"></i></li>
+                            <li class="about__skill-icon"><i class="fab fa-npm"></i></li>
+                        </ul>
+                    </div>
+                    <div class="strips">
+                        <span class="strips__line"></span>
+                        <span class="strips__line end"></span>
+                    </div>
+                </section>
                 <section class="panel uxui">
                     <div class="content__inner">
                         <h3 class="content__inner-title">UX UI Design<br>Mark up</h3>
                         <p class="content__inner-subtext">여행 관련 다양한 프로젝트를 진행하여<br>디자인 및 마크업의 노하우를 가지고 있습니다.</p>
                         <ul class="content__inner-list">
-                            <li class="content__inner-btn">
-                                <span class="tooltip" data-title="[플러스앤] 자세히 보기">[플러스앤] 브랜드 웹사이트/복지몰/회원권/휴양소/엑스트라넷 등</span>
+                            <li class="content__inner-btn" onclick='addClassNames()'>
+                                <span class="tooltip" data-title="[플러스앤] 작업물 소개">[플러스앤] 브랜드 웹사이트/복지몰/회원권/휴양소/엑스트라넷 등</span>
                             </li>
                             <li class="content__inner-btns">[스테리움] 캠핑 웹사이트 (제천/서천/변산)</li>
                             <li class="content__inner-btns">[임진각평화누리캠핑장] 웹사이트</li>
@@ -123,17 +198,7 @@
                             <li class="content__inner-btns">[저스트고] 해외, 국내항공, 해외항공, 국내숙박, 제주렌트카</li>
                         </ul>
                     </div>
-                    <!-- modal content -->
-                    <div class="modal">
-                        <div class="modal__inner">
-                            <div class="modal__close">&times;</div>
-                            <p>[플러스앤] 브랜드 웹사이트/복지몰/회원권/휴양소/엑스트라넷 등</p>
-                            <div class="modal__content">
-                                준비중입니다.
-                            </div>
-                        </div>
-                    </div>
-                    <!-- //modal content -->
+
                     <div class="content__image"></div>
                     <div class="strips">
                         <span class="strips__line"></span>
@@ -194,6 +259,8 @@
 <script type="text/javascript" src="assets/js/lib/gsap3/gsap.min.js"></script>
 <script type="text/javascript" src="scrollmagic/uncompressed/ScrollMagic.js"></script>
 <script type="text/javascript" src="scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+<script type="text/javascript" src="assets/vendors/highlight.js"></script>
+<script type="text/javascript" src="assets/js/app.js"></script>
 <script type="text/javascript" src="assets/js/common.js"></script>
 </body>
 </html>

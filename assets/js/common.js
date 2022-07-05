@@ -60,3 +60,9 @@ window.onclick = function(event) {
         event.target.style.display = "none";
     }
 };
+
+function addClassName() {
+    document.getElementById('main').classList.add('o-h');
+    alert(document.getElementById('main').className);
+}
+

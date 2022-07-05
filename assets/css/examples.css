@@ -103,12 +103,12 @@ section#titlechart #description ol {
 }
 
 
-section.content * {
-	font-size: 1rem;
-}
-section.content {
-	font-size:1rem;
-}
+/*section.content * {*/
+/*	font-size: 1rem;*/
+/*}*/
+/*section.content {*/
+/*	font-size:1rem;*/
+/*}*/
 section.content.fullheight {
 	min-height: 100%;
 }
