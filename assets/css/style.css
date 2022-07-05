@@ -202,7 +202,7 @@ ul,ol,li,p,dt,dd,figure{padding:0;margin:0}
 .modal__inner{background-color:#fefefe;margin:15% auto;padding:20px;border:1px solid #888;width:80%;border-radius:15px;box-shadow:0 0 8px rgba(0,0,0,0.3)}
 .modal__close{color:#aaaaaa;float:right;font-size:28px;font-weight:bold;}
 .modal__close:hover,.modal__close:focus{color:#000000;text-decoration:none;cursor:pointer}
-.modal__content{overflow-y:auto;display:flex;width:100%;min-height:600px}
+.modal__content{overflow-y:auto;width:100%;text-align:center}
 
 
 .close-button{position:relative;display:inline-block;width:50px;height:50px;box-sizing:border-box;line-height:50px}

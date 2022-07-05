@@ -1,21 +1,20 @@
 $(document).ready(function() {
-    // Fakes the loading setting a timeout
     setTimeout(function() {
         $('body').addClass('loaded');
     }, 1500);
 });
 
 $(function () {
-    var controller = new ScrollMagic.Controller({
+    let controller = new ScrollMagic.Controller({
         globalSceneOptions: {
             triggerHook: 'onLeave',
             duration: "200%"
         }
     });
 
-    var slides = document.querySelectorAll("section.panel");
+    let slides = document.querySelectorAll("section.panel");
 
-    for (var i=0; i<slides.length; i++) {
+    for (let i=0; i<slides.length; i++) {
         new ScrollMagic.Scene({
             triggerElement: slides[i]
         })
@@ -31,16 +30,15 @@ $(document).ready(function(){
     });
 });
 
-var modals = document.getElementsByClassName("modal");
-var btns = document.getElementsByClassName("content__inner-btn");
-var spanes = document.getElementsByClassName("modal__close");
-var funcs = [];
+let modals = document.getElementsByClassName("modal");
+let btns = document.getElementsByClassName("content__inner-btn");
+let spanes = document.getElementsByClassName("modal__close");
+let funcs = [];
 
 function Modal(num) {
     return function() {
         btns[num].onclick =  function() {
             modals[num].style.display = "block";
-            console.log(num);
         };
 
         spanes[num].onclick = function() {
@@ -49,16 +47,16 @@ function Modal(num) {
     };
 }
 
-for(var i = 0; i < btns.length; i++) {
+for(let i = 0; i < btns.length; i++) {
     funcs[i] = Modal(i);
 }
 
-for(var j = 0; j < btns.length; j++) {
+for(let j = 0; j < btns.length; j++) {
     funcs[j]();
 }
 
 window.onclick = function(event) {
-    if (event.target.className == "modal") {
+    if (event.target.className === "modal") {
         event.target.style.display = "none";
     }
 };
