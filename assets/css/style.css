@@ -260,7 +260,11 @@ ul,ol,li,p,dt,dd,figure{padding:0;margin:0}
 .owl-carousel.owl-drag .owl-item .item a:before{content:'';position:absolute;top:19px;left:-80px;display:inline-block;width:80px;height:1px;background-color:#888888}
 
 .owl-nav{margin-right:20px}
-.owl-nav button{width:30px;height:30px;border:1px solid #666666 !important;border-radius:5px}
+.owl-nav button{width:30px;height:30px;border:1px solid #666666 !important;border-radius:5px;background-repeat:no-repeat !important;background-position:center !important;background-size:100%}
+.owl-nav button.owl-prev{background-image:url('../img/arrow-left.svg') !important}
+.owl-nav button.owl-next{background-image:url('../img/arrow-right.svg') !important}
+
+.owl-nav button span{display:none}
 
 .owl-theme .owl-dots .owl-dot span:before{position:absolute;display:none;top:-52px;left:36px;font-family:'Noto Sans KR',sans-serif;font-weight:700;font-size:1.25rem}
 .owl-theme .owl-dots .owl-dot.active span:before{display:block}
