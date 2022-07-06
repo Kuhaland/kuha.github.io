@@ -220,12 +220,12 @@ ul,ol,li,p,dt,dd,figure{padding:0;margin:0}
 .m-t-45{margin-top:45px !important}
 .m-t-50{margin-top:50px !important}
 
-.modal{display:none;overflow:auto;position:fixed;z-index:100;left:0;top:0;width:100%;height:100%;background-color:rgb(0,0,0);background-color: rgba(0,0,0,0.5)}
-.modal__inner{overflow:hidden;width:1010px;max-height:800px;padding-bottom:20px;background-color:#dadada;border-radius:10px;margin:4% auto;box-shadow:0 0 8px rgba(0,0,0,0.3);box-sizing:border-box}
+.modal{display:none;overflow:auto;position:fixed;z-index:100;left:0;top:0;width:100%;height:100%;background-color:rgb(0,0,0);background-color: rgba(0,0,0,0.6)}
+.modal__inner{overflow:hidden;width:1010px;max-height:800px;padding-bottom:15px;background-color:#dadada;border-radius:10px;margin:4% auto;box-shadow:0 0 8px rgba(0,0,0,0.3);box-sizing:border-box}
 .modal__close{display:inline-block;width:28px;height:28px;padding:5px;border:2px solid #aaaaaa;border-radius:50%;color:#aaaaaa;text-align:center;line-height:26px;transition:all ease 0.3s;cursor:pointer}
 .modal__close:hover,.modal__close:focus{border-color:#b392d2;color:#b392d2;text-decoration:none;cursor:pointer;transform:rotate(180deg);transition:all ease 0.3s}
-.modal__content{position:relative;width:100%;text-align:center}
-.modal__inner-head{display:block;width:100%;padding:20px}
+.modal__content{position:relative;width:100%;text-align:center;border-top:1px solid #666666;border-bottom:1px solid #666666}
+.modal__inner-head{display:block;width:100%;padding:20px;text-align:right;box-sizing:border-box}
 
 .modal__website{position:absolute;top:0;right:0;display:inline-block;padding:5px 10px;margin-right:5px;border:1px solid rgba(250,250,250,0.8);border-radius:5px;font-size:0.875rem;color:rgba(250,250,250,0.8);text-align:center;line-height:1.25;cursor:pointer}
 
@@ -242,6 +242,15 @@ ul,ol,li,p,dt,dd,figure{padding:0;margin:0}
 .modal__inner::-webkit-scrollbar{width:10px;}
 .modal__inner::-webkit-scrollbar-thumb{background-color:#2f3542;border-radius:5px}
 .modal__inner::-webkit-scrollbar-track{background-color:#dddddd;border-radius:10px;box-shadow:inset 0px 0px 5px #ffffff}
+
+.owl-carousel .owl-nav.disabled{display:block;float:right}
+.owl-theme .owl-nav.disabled+.owl-dots{float:left;margin-top:25px;margin-left:20px}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{background:#666666;}
+.owl-theme .owl-dots .owl-dot span{background:#b5b5b5}
+
+.owl-nav{margin-right:20px}
+.owl-nav button{width:30px;height:30px;border:1px solid #666666 !important;border-radius:5px}
 
 .o-h{overflow:hidden !important}
 .dn{display:none !important}

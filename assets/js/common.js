@@ -8,6 +8,7 @@ $(function () {
     let controller = new ScrollMagic.Controller({
         globalSceneOptions: {
             triggerHook: 'onLeave',
+            delay:"1",
             duration: "200%"
         }
     });
