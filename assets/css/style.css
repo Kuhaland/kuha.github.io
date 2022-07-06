@@ -249,6 +249,9 @@ ul,ol,li,p,dt,dd,figure{padding:0;margin:0}
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{background:#666666;}
 .owl-theme .owl-dots .owl-dot span{background:#b5b5b5}
 
+.owl-carousel.owl-drag .owl-item .item a{position:absolute;top:30px;left:400px;display:inline-block;width:100px;padding:8px 10px;border-color:#666666;color:#666666}
+.owl-carousel.owl-drag .owl-item .item a:before{content:'';position:absolute;top:16px;left:-100px;display:inline-block;width:100px;height:1px;background-color:#888888}
+
 .owl-nav{margin-right:20px}
 .owl-nav button{width:30px;height:30px;border:1px solid #666666 !important;border-radius:5px}
 
