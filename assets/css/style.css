@@ -243,17 +243,42 @@ ul,ol,li,p,dt,dd,figure{padding:0;margin:0}
 .modal__inner::-webkit-scrollbar-thumb{background-color:#2f3542;border-radius:5px}
 .modal__inner::-webkit-scrollbar-track{background-color:#dddddd;border-radius:10px;box-shadow:inset 0px 0px 5px #ffffff}
 
+.participation{position:absolute;left:30px;top:14px;display:inline-block;width:250px;padding:10px;border:1px solid #666666;border-radius:5px}
+.participation li{position:relative;padding-left:12px;font-size:0.875rem;text-align:left;box-sizing:border-box}
+.participation li:before{content:'';display:inline-block;position:absolute;top:7px;left:0;width:6px;height:6px;border-radius:50%}
+.participation li:nth-child(1):before{background-color:#b768d3}
+.participation li:nth-child(2):before{background-color:#6090e3}
+.participation li:nth-child(3):before{background-color:#666666}
+
 .owl-carousel .owl-nav.disabled{display:block;float:right}
 .owl-theme .owl-nav.disabled+.owl-dots{float:left;margin-top:25px;margin-left:20px}
 
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{background:#666666;}
 .owl-theme .owl-dots .owl-dot span{background:#b5b5b5}
 
-.owl-carousel.owl-drag .owl-item .item a{position:absolute;top:30px;left:380px;display:inline-block;width:100px;padding:10px 30px 10px 10px;background:url('../img/arrow-right.svg') no-repeat right 8px center;border-color:#666666;color:#666666}
-.owl-carousel.owl-drag .owl-item .item a:before{content:'';position:absolute;top:16px;left:-80px;display:inline-block;width:80px;height:1px;background-color:#888888}
+.owl-carousel.owl-drag .owl-item .item a{position:absolute;top:33px;left:380px;display:inline-block;width:100px;padding:10px 30px 10px 10px;background:url('../img/arrow-right.svg') no-repeat right 8px center;border-color:#666666;color:#666666}
+.owl-carousel.owl-drag .owl-item .item a:before{content:'';position:absolute;top:19px;left:-80px;display:inline-block;width:80px;height:1px;background-color:#888888}
 
 .owl-nav{margin-right:20px}
 .owl-nav button{width:30px;height:30px;border:1px solid #666666 !important;border-radius:5px}
+
+.owl-theme .owl-dots .owl-dot span:before{position:absolute;display:none;top:-52px;left:36px;font-family:'Noto Sans KR',sans-serif;font-weight:700;font-size:1.25rem}
+.owl-theme .owl-dots .owl-dot.active span:before{display:block}
+.owl-theme .owl-dots .owl-dot:nth-child(1) span:before{content:'스테리움 웹사이트(제천/서천/변산)'}
+.owl-theme .owl-dots .owl-dot:nth-child(2) span:before{content:'플러스앤 여행 복지몰'}
+.owl-theme .owl-dots .owl-dot:nth-child(3) span:before{content:'임진각 평화누리 캠핑장'}
+.owl-theme .owl-dots .owl-dot:nth-child(4) span:before{content:'마이캠핑(안드로이드-vue)'}
+.owl-theme .owl-dots .owl-dot:nth-child(5) span:before{content:'플러스앤 웹사이트'}
+.owl-theme .owl-dots .owl-dot:nth-child(6) span:before{content:'마레보리조트'}
+.owl-theme .owl-dots .owl-dot:nth-child(7) span:before{content:'플러스앤 엑스트라넷(larabel)'}
+.owl-theme .owl-dots .owl-dot:nth-child(8) span:before{content:'플러스앤 회원권(nuxt)'}
+.owl-theme .owl-dots .owl-dot:nth-child(9) span:before{content:'창조트레저 웹사이트'}
+.owl-theme .owl-dots .owl-dot:nth-child(10) span:before{content:'창조트레저 마이크로 사이트'}
+.owl-theme .owl-dots .owl-dot:nth-child(11) span:before{content:'DMC Ville 웹사이트'}
+.owl-theme .owl-dots .owl-dot:nth-child(12) span:before{content:'리앤이 MGM 웹사이트'}
+.owl-theme .owl-dots .owl-dot:nth-child(13) span:before{content:'카카오 항공권 검색'}
+.owl-theme .owl-dots .owl-dot:nth-child(14) span:before{content:'노랑풍선 해외호텔'}
+.owl-theme .owl-dots .owl-dot:nth-child(15) span:before{content:'ATRAVEL 여행협동조합 웹사이트'}
 
 .o-h{overflow:hidden !important}
 .dn{display:none !important}
