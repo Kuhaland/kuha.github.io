@@ -200,7 +200,9 @@ ul,ol,li,p,dt,dd,figure{padding:0;margin:0}
 .content__inner-list li>span{position:relative;left:-2px;z-index:10;font-size:0.8571rem !important}
 .content__inner-list li>span:hover{color:#835d2e;text-decoration:underline}
 
-.content__inner-btn{cursor:pointer}
+.content__inner-btn{position:absolute;right:0;top:8px;display:inline-block;padding:10px 40px 10px 20px;margin-left:90px;background:url('../img/arrow-right-1.svg') no-repeat right 5px center;border:1px solid #888888;border-radius:5px;font-size:0.75rem;color:#888888;line-height:1.1;cursor:pointer}
+.content__inner-btn:before{content:'';position:absolute;top:16px;left:-120px;display:inline-block;width:120px;height:1px;background-color:#888888}
+.content__inner-btn:hover{background-cololr:#fff}
 
 .l-25p{left:25% !important}
 
