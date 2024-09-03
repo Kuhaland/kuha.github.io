@@ -6,7 +6,7 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/kuhaland.github.io/',
+  base: '/',
   plugins: [
     vue(),
     vueDevTools(),
