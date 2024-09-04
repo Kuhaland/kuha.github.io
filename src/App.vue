@@ -11,7 +11,7 @@
 </template>
 
 <script setup>
-import HelloWorld from '/src/components/HelloWorld.vue'
+import HelloWorld from './src/components/HelloWorld.vue'
 </script>
 <style lang="scss" scoped>
 </style>
