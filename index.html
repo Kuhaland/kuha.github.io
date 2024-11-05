@@ -28,6 +28,29 @@
                 loop: true,
             });
         });
+
+        $(document).ready(function() {
+            let isPaused = false;
+
+            $(window).on("scroll", function() {
+                if (!isPaused) {
+                    isPaused = true;
+
+                    // 스크롤 멈추기
+                    $('html, body').css({
+                        overflow: 'hidden'
+                    });
+
+                    // 1초 동안 멈춘 후 스크롤 재개
+                    setTimeout(function() {
+                        $('html, body').css({
+                            overflow: ''
+                        });
+                        isPaused = false;
+                    }, 1000); // 1000ms = 1초
+                }
+            });
+        });
     </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-61JLYLLL0C"></script>
