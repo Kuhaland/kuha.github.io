@@ -28,29 +28,6 @@
                 loop: true,
             });
         });
-        document.addEventListener("DOMContentLoaded", function () {
-            let controller = new ScrollMagic.Controller();
-            let sections = document.querySelectorAll("section.panel");
-            let scrollDelay = 500; // 지연 시간 (밀리초 단위)
-
-            sections.forEach((section, index) => {
-                // 각 섹션마다 ScrollMagic 장면(scene)을 생성합니다.
-                new ScrollMagic.Scene({
-                    triggerElement: section,
-                    duration: "100%", // 각 섹션의 높이만큼 설정
-                    triggerHook: 0.5
-                })
-                    .on("enter", function (event) {
-                        setTimeout(() => {
-                            section.scrollIntoView({
-                                behavior: "smooth",
-                                block: "start"
-                            });
-                        }, scrollDelay * index); // 각 섹션마다 지연 시간을 점진적으로 증가
-                    })
-                    .addTo(controller);
-            });
-        });
     </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-61JLYLLL0C"></script>
